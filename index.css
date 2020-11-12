@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color: yellow;
+  color: #000;
+}
+
+.home-main-section{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.home-main-section .cupcake {
+  background-image: url(./images/4-remove-bg.png);
+  min-height: 70vh;
+  max-height: 100vh;
+  min-width: 30vw;
+  max-width: 60vw;
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home-main-section .title{
+  display: flex;
+  align-items: center;
+  font-family: "Oleo Script";
+}
+
+.subtitle{
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: fixed;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media(max-width:768px){
+  .home-main-section .title .left, .home-main-section .title .right{
+    display: none;
+  }
+  .home-main-section .cupcake{
+    min-width: 70vw;
+    display: flex;
+    align-items: center;
+  }
+  .main-nav ul li a{
+    font-size: .7rem;
+    margin: 1rem;
+    padding: 0;
+  }
+  .subtitle{
+    font-size: .7rem;
+    word-wrap: none; 
+  }
+}
+
+@media(max-height:400px){
+  .subtitle{
+    font-size: .7rem;
+    position: absolute;
+    top: 90%;
+  }
+}
